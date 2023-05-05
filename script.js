@@ -7,3 +7,15 @@ inputEl.addEventListener('input', function() {
 
   resultEl.textContent = `<polygon points="${processedString}"></polygon>`
 });
+
+const copyText = () => {
+  navigator.clipboard.writeText(resultEl.textContent)
+    .then(() => {
+      console.log('Текст скопирован успешно');
+    })
+    .catch((err) => {
+      console.error('Не удалось скопировать текст: ', err);
+    });
+};
+
+resultEl.addEventListener('click', copyText);
