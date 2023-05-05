@@ -19,6 +19,7 @@ input[type="text"] {
     padding: 5px;
     margin-bottom: 10px;
     height: 70px;
+    font-size: 24px;
   }
   
 #result {
