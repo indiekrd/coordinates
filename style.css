@@ -24,4 +24,10 @@ input[type="text"] {
     display: block;
     margin-top: 10px;
     font-weight: bold;
+    cursor: pointer;
+  }
+
+#result:hover {
+    cursor: pointer;
+    border-bottom: 1px solid;
   }
